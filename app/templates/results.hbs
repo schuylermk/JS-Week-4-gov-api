@@ -1,0 +1,9 @@
+{{yield}}
+<h1>{{committee.chamber}}</h1>
+<ul>
+  {{#each model as |committee|}}
+    <li>{{committee.name}}<br>
+        Parent Committee: {{committee.parent_committee_id}}</li>
+        <hr>
+  {{/each}}
+</ul>

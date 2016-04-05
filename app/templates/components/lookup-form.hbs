@@ -1,0 +1,16 @@
+<form>
+  <div class="form-group">
+    <label for="chamber">Chamber</label>
+    {{#x-select value=chamber}}
+        {{#x-option value="House"}}House{{/x-option}}
+        {{#x-option value="Senate"}}Senate{{/x-option}}
+    {{/x-select}}
+  </div>
+  <button {{action 'chamberLookup'}}>Search</button>
+</form>
+
+<!-- <select onchange={{action (mut chamberIndex) value="target.value"}}>
+  {{#each chambers as |chamber|}}
+    <option value=name selected={{is-eq chamberIndex index}}>{{chamber.name}}</option>
+  {{/each}}
+</select> -->
