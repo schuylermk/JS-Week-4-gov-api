@@ -1,6 +1,6 @@
 <ul>
   {{#each bills as |bill-result|}}
-    {{#link-to 'bill' bill-result.bill_id}}<li><strong>{{bill-result.short_title}}</strong></li>{{/link-to}}
-        <hr>
+    {{#link-to 'bill' bill-result.bill_id}}<li><strong>{{shortie bill-result}}</strong></li>{{/link-to}}
   {{/each}}
+  <hr>
 </ul>
