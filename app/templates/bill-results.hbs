@@ -1,8 +1,1 @@
-<ul>
-  {{#each model as |bill|}}
-    <li>{{bill.official_title}}<br>
-        <strong>{{bill.short_title}}</strong><br>
-        Last Action At: {{bill.last_action_at}}</li>
-        <hr>
-  {{/each}}
-</ul>
+{{bill-result-tile bills=model}}
