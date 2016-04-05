@@ -1,8 +1,6 @@
 <ul>
-  {{#each sortedBills as |bill|}}
-    <li>{{bill.official_title}}<br>
-        <strong>{{bill.short_title}}</strong><br>
-        Last Action At: {{bill.last_action_at}}</li>
+  {{#each bills as |bill-result|}}
+    {{#link-to 'bill' bill-result.bill_id}}<li><strong>{{bill-result.short_title}}</strong></li>{{/link-to}}
         <hr>
   {{/each}}
 </ul>
