@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('results', {path: '/results/:chamber'});
+  this.route('bill-results', {path: '/bill-results/:bill'});
 });
 
 export default Router;

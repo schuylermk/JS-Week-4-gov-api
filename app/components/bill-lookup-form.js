@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    chamberLookup() {
+    billLookup() {
       var params = {
-        chamber: this.get('chamber')
+        bill: this.get('bill')
       };
-      this.sendAction('chamberLookup', params);
+      this.sendAction('billLookup', params);
     }
   }
 });
